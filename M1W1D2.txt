@@ -1,0 +1,45 @@
+Semplice Giochino Attacco/Difesa sviluppato su 5 turni ognuno composto da 2 fasi ovvero la prima fase attacco/difesa player1 e la seconda attacco/difesa cpu1 o viceversà, dipenderà da chi sia più veloce nell'attaccare:
+Un semplice personaggio con la spada contro un semplice mostro.
+
+
+
+Personaggio/CPU
+
+Attributo: Hp - Stato: 10 (0 min/500 max)
+Attributo: Attacco - Stato: 1 (1 min/500 max)
+Attributo: Difesa - Stato: 0 (0 min/250 max)
+Attributo: Stamina - Stato: 100 (0 min/100 max)
+Attributo: Velocità - Stato: 0 (-10 min/10 max)
+
+
+
+Azioni
+
+Attaccare:
+	Riduce lo stato di "Stamina" dell'utilizzatore di 15. 
+	Riduce lo stato di "Hp" del personaggio bersaglio di "Attacco" dell'utilizzatore -"Difesa" del personaggio bersaglio. 
+	Termina il turno dell'utilizzatore.
+
+Riposo: 
+	Riduce lo stato di "Velocità" dell'utilizzatore al min per il turno che segue. 
+	Incrementa lo stato di "Stamina" dell'utilizzatore di 25. 
+	Incrementa lo stato di "Difesa" dell'utilizzatore di "Attacco" del personaggio nemico - 10 per il turno che segue.
+	Termina il turno dell'utilizzatore.
+
+Blocco:	
+	Riduce lo stato di "Stamina" dell'utilizzatore di 10.
+	Incrementa lo stato di "Difesa" dell'utilizzatore di 10.
+	Termina il turno dell'utilizzatore.
+
+Attacco Rapido:
+	Riduce lo stato di "Stamina" dell'utilizzatore di 25.
+	Incrementa lo stato di "Velocità" dell'utilizzatore di max per il turno che segue.
+	Riduce lo stato di "Hp" del personaggio bersaglio di "Attacco" dell'utilizzatore -"Difesa" del personaggio bersaglio + 15.
+	Termina il turno dell'utilizzatore.
+
+Carica:
+	Riduce lo stato di "Stamina" dell'utilizzatore di 10.
+	Incrementa lo stato di "Attacco" dell'utilizzatore di 5.
+	Incrementa lo stato di "Velocità" dell'utilizzatore di 0.5.
+	Riduce lo stato di "Difesa" dell'utilizzatore di 5.
+	Termina il turno dell'utilizzatore.
